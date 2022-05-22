@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <title>Daniya Aromatics Bill</title>
+  <link rel="icon" href="img/DA.png">
+  <link rel="stylesheet" media="all"  />
+  <script src="https://kit.fontawesome.com/f40ea50ae8.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+   *{
+  text-transform: capitalize;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* .flex{
+  display: flex;
+} */
+
+.container{
+background-color: white;
+}
+.innercontainer{
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #780505;
+background-color: #FFFCD8;
+padding: 1rem;
+padding-bottom: 5rem;
+}
+
+
+.logo{
+
+  border: 2px solid #780505;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+  width: 50%;
+  height: 100%;
+  border-radius: 6%/18%;
+  padding: 1rem;
+}
+
+
+
+.info{
+  display: flex;
+  flex-direction: column
+}
+
+.area{
+  margin: 2rem 0px;
+  display: flex;
+}
+
+
+span{
+  display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+ table,th,tr,td {
+  
+  border-collapse: collapse;
+  border: 2px solid #780505 !important;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+table tr:nth-child(even) input {
+    width: 100%;
+    background: #fffcd8;
+}
+
+
+.upper table tr input {
+    width: 100%;
+    background: #fffcd8;
+}
+
+
+.bottom-button{
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-button > button{
+  margin: 1rem;
+}
+
+
+table.table.tblheader2.m-0, tbody, tr, td {
+    border-left: 0px solid transparent !important;
+}
+
+ @media print {
+       *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+background-color: white !important;
+}
+.innercontainer{
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #780505;
+background-color: #FFFCD8 !important;
+padding: 1rem;
+padding-bottom: 1rem;
+}
+
+.logo{
+  border: 4px solid #780505;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+  width: 50%;
+  height: 100%;
+  border-radius: 6%/18%;
+  padding: 1rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column
+}
+
+.area{
+  margin: 2rem 0px;
+  display: flex;
+}
+
+span{
+  display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+  table,th,tr,td {
+  border-collapse: collapse;
+  border: 2px solid #780505 !important;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+table tr:nth-child(even) input {
+    width: 100%;
+    background: #fffcd8;
+}
+
+.upper table tr input {
+    width: 100%;
+    background: #fffcd8;
+}
+
+.bottom-button{
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-button > button{
+  margin: 1rem;
+}
+
+table.table.tblheader2.m-0, tbody, tr, td {
+    border-left: 0px solid transparent !important;
+}
+
+.bottom-button{
+  display: none;
+}
+}
+</style>
+<body>
+  <div class="container">
+    <div class="innercontainer">
+      <div class="logo">
+        <img src="img/DA.png" class="img-fluid logo-img" alt="DA" />
+        
+      </div>
+  
+      <div class="upper area table-responsive">
+        <table class="table tblemenue m-0">
+          <tbody>
+            <tr>
+              <td >Name:</td>
+              <td><div contenteditable="true" class="text">Edit</div></td>
+            </tr>
+            <tr>
+              <td >address</td>
+              <td><input type="address"/></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table tblheader2 m-0">
+          <tbody class="flex">
+            <tr>
+              <td > Date: </td>
+              <td><input type="date"/></td>
+            </tr>
+            <tr>
+              <td > Phone:</td>
+              <td><input type="number"/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Item Description</th>
+              <th>Quantity</th>
+              <th>Rate</th>
+              <th>Amount</th>
+                <td>
+                <span class="faq">
+                  <i class="fas fa-times" style="display: none;"></i></span>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr>
+              <th class="num">1</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">2</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">3</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">4</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">5</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">6</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">7</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">8</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">item</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">9</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+               <tr>
+              <th class="num">10</th>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><div contenteditable="true" class="text">Edit</div></span>
+              </td>
+              <td>
+                <span><input type="number" class="number" /></span>
+              </td>
+              <td>
+                <span class="faq">
+                  <i class="fas fa-times" onclick="remove(this)"></i></span>
+              </td>
+            </tr>
+          </tbody>
+
+          <tr align="right" >
+            <td colspan="4"><span>Total Amount :</span></td>
+            <td>
+              <span class="totalvalue"></span>
+            </td>
+            <td>
+                <span class="faq">
+                  <i class="fas fa-times" style="display: none;"></i></span>
+              </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="bottom-button">
+        <button class="Add btn btn-primary">Add <i class="fas fa-plus"></i></button>
+        <button class="total btn btn-success">Total <i class="fas fa-calculator"></i></button>
+        <button  class="btn btn-info" onclick="window.print()">Print <i class="fas fa-download"></i></button>
+        
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  let childContainer = document.querySelector("tbody");
+
+  var container = $(".tbody > tr").html();
+  $(".Add").click(function () {
+    $(".tbody").append("<tr>" + container + "</tr>");
+    let span = document.querySelectorAll(".num");
+    span.forEach((v, i) => {
+      v.innerHTML = i + 1;
+    });
+  });
+
+  function remove() {
+    let span = document.querySelectorAll(".faq");
+    span.forEach((v) => {
+      v.addEventListener("click", () => {
+        if ($(".tbody > tr").length > 10) {
+          $(v).closest($("tr")).remove();
+          let span = document.querySelectorAll(".num");
+          span.forEach((v, i) => {
+            v.innerHTML = i + 1;
+          });
+        }
+      });
+    });
+  }
+
+  $(".total").click(function () {
+    var Inputvalue = document.querySelectorAll(".number");
+    let value = 0;
+    Inputvalue.forEach((v) => {
+      if(!Number.isNaN(parseInt(v.value))){
+      value += parseInt(v.value);
+      }
+    });
+
+    $(".totalvalue").text(value);
+  });
+</script>
+
+</html>
